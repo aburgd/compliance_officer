@@ -6,7 +6,7 @@ import settings
 
 def build_connection_url():
     return "postgresql://{0}:{1}@{2}/{3}".format(
-        settings.DB_USER, settings.DB_PASS, settings.DB_LOCN, settings.DB_NAME
+        settings.DB_USER, settings.DB_PASS, settings.DB_HOST, settings.DB_NAME
     )
 
 

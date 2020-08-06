@@ -55,10 +55,9 @@ async def register(ctx):
             connection.execute(upd)
             await ctx.send("Nick updated. We'll be with you shortly.")
     else:
-    ins = sa.insert(staff).values(snowflake=staff_id, current_nick=staff_nick)
+        ins = sa.insert(staff).values(snowflake=staff_id, current_nick=staff_nick)
         connection.execute(ins)
     await ctx.send("Number taken. Please take a seat.")
-
 
 
 bot.run(CLIENT_TOKEN)

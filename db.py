@@ -1,7 +1,7 @@
 import sqlalchemy as sa
 from sqlalchemy import create_engine
 from sqlalchemy.ext.automap import automap_base
-import settings
+import settings_remote
 
 
 def build_connection_url():

@@ -4,7 +4,7 @@ from sqlalchemy.ext.automap import automap_base
 import discord
 from discord.ext import commands
 
-from settings import CLIENT_TOKEN
+from settings_remote import CLIENT_TOKEN
 import db
 
 description = """Compliance Officer of the Nine
